@@ -14,7 +14,7 @@ let nameBase = 'Anonymous';
 textInput.addEventListener('input', (event) => {
     outputEl.textContent = event.currentTarget.value;
 
-    if (event.target.value === "") {
+    if (event.target.value.trim() === "") {
         outputEl.textContent = nameBase;
     }
 });
